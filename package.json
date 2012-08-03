@@ -1,0 +1,21 @@
+{
+  "name": "SwissArmyNode",
+  "version": "0.0.1",
+  "description": "A toolbox of useful examples.",
+  "main": "app.js",
+  "scripts": {
+    "test": "make"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:baxford/swiss-army-node.git"
+  },
+  "keywords": [
+    "node.js",
+    "tools",
+    "toolbox",
+    "examples"
+  ],
+  "author": "Bob Axford",
+  "license": "BSD"
+}
