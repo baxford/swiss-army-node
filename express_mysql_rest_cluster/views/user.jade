@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+    .formField
+        label(for="username") Username
+        p #{user.username}
+    .formField
+        label(for="email") Email
+        p #{user.email}
+    .formField
+        label(for="familyName") Family Name
+        p #{user.familyName}
+    .formField
+        label(for="givenName") Given Name
+        p #{user.givenName}
+    h1 Survey Results
+    - each pct, colour in surveyResults
+            p= colour + ": " + pct + '%'

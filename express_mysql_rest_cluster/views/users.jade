@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+    table
+      tr
+        th Username
+        th Email
+        th Family Name
+        th Given Name
+      - each user in users
+        tr
+            td #{user.username}
+            td #{user.familyName}
+            td #{user.givenName}
+            td #{user.email}
+                

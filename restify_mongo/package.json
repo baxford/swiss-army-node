@@ -1,0 +1,24 @@
+{
+  "name": "restify_mongo",
+  "version": "0.0.1",
+  "description": "mongo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "keywords": [
+    "mongo"
+  ],
+  "author": "bob@figjamit.com.au",
+  "license": "BSD",
+  "dependencies": {
+    "mongoose": "~3.1.1",
+    "mongoskin": "~0.4.1",
+    "restify": "~1.4.4",
+    "node-errors": "git+ssh://git@github.com:baxford/node-errors.git#v1.0.0",
+    "winston": "~0.6.2",
+    "redis": "~0.7.2",
+    "async": "~0.1.22"
+  }
+}
