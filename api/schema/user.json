@@ -1,0 +1,26 @@
+{
+    "type": "object",
+    "properties": {
+        "_id": {
+            "type": "object",
+            "optional": false
+        },
+        "username": {
+            "type": "string",
+            "optional": false
+        },
+        "email": {
+            "type": "string",
+            "optional": false
+        },
+        "familyName": {
+            "type": "string",
+            "optional": true
+        },
+        "givenName": {
+            "type": "string",
+            "optional": true
+        }
+    },
+    "additionalProperties": false
+}

@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  h1= title
+  p Add/Edit User
+    table
+    form(action="/user", method="POST")
+        .formField
+            label(for="username") Username
+            input(type="text", id="username", name="username")
+        .formField
+            label(for="email") Email
+            input(type="text", id="email", name="email")
+        .formField
+            label(for="familyName") Family Name
+            input(type="text", id="familyName", name="familyName")
+        .formField
+            label(for="givenName") Given Name
+            input(type="text", id="givenName", name="givenName")
+        .formField
+            label(for="favouriteColour") Favourite Colour
+            input(type="text", id="favouriteColour", name="favouriteColour")
+        input(type="submit") Submit
