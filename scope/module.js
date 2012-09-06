@@ -21,5 +21,6 @@ exports.add = function(a, b) {
 
 exports.subtract = function(a, b) {
     // call the global minus function that is defined in the parent module.
+    console.log(__filename + ' calling the global "minus" function from index.js');
     return minus(a, b);
 };
