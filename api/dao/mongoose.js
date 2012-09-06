@@ -5,9 +5,10 @@ var mongoose = require('mongoose');
 var ObjectId = require('mongoose').Types.ObjectId;
 var db = mongoose.createConnection(conf.mongo.url);
 db.on('error', console.error.bind(console, 'connection error:'));
+
 db.once('open', function () {
-  // yay!
 });
+
 var userSchema = mongoose.Schema(
         {
             familyName: 'string', 
@@ -28,7 +29,7 @@ exports.getUsers = function(done) {
 
 exports.getUser = function(id, done) {
     User.findById(id, function(err, user) {
-        log.debug(err + ' = err, findbyId: ' + user);
+//        log.debug(err + ' = err, findbyId: ' + user);
         if (err) {
             done(err);
         } else {

@@ -45,10 +45,9 @@ var tcpServer = require(__dirname + '/lib/tcpServer.js');
 
 // finally start up the heartbeat using a child process
 var cp = require('child_process');
-//setup the pHashWorker initially, instead of forking each time.
-//TODO BA check about handling failure of child process.
-var heartbeat = cp.fork(__dirname + '/lib/heartbeat.js');
-console.log('Created heartbeat');
-heartbeat.on('message', function(m) {
-  console.log('Message from heartbeat:', m);
-});
+
+//var heartbeat = cp.fork(__dirname + '/lib/heartbeat.js');
+//console.log('Created heartbeat');
+//heartbeat.on('message', function(m) {
+//  console.log('Message from heartbeat:', m);
+//});

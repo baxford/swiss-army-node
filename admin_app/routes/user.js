@@ -54,7 +54,7 @@ exports.saveUser = function(req, res) {
          },
          submitSurvey: function(callback) {
              // use the TCP Api to update survey results.
-             submitSurvey(req.body.favouriteColour, callback);
+             doSurveySubmit(req.body.favouriteColour, null, callback);
          }
         },
         function(err, result) {
@@ -86,7 +86,7 @@ exports.list = function(req, res){
 };
 
 //request a message from the Edge API
-function submitSurvey(favouriteColour, done) {
+function doSurveySubmit(favouriteColour, userId, done) {
     // create a TCP socket client and request a message:
     var client = new net.Socket();
     // Add a 'data' event handler for the client socket

@@ -15,7 +15,7 @@ server.on('connection', function(sock) {
         log.debug('DATA ' + sock.remoteAddress + ': ' + sock.remotePort +' =>'+ message);
         try {
             var data = JSON.parse(message);
-            // optionally validate the request here.
+            // this is only done this way to illustrate the use of async.series
             async.series([
                     function addFavouriteColour(callback) {
                         redisDao.addFavouriteColour(data.favouriteColour, function(err, countForColour, totalColours, totalSurveys) {

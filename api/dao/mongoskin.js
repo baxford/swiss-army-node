@@ -21,7 +21,7 @@ exports.saveOrUpdateUser = function(user, id, done) {
     log.debug('Mongoskin Saving User: ' + JSON.stringify(user));
     // TODO, implement the update if ID is provided.
     db.collection('users').insert(user, {}, function(err, result) {
-        log.debug(err + ' = err, result= ' + result);
+//        log.debug(err + ' = err, result= ' + result);
         if (err) {
             done(err);
         } else if (!result) {
